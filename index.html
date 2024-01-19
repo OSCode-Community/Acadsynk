@@ -73,10 +73,77 @@
             <h1>Build your one-stop ERP, LMS, CMS and FMS solution with <span>Acadsynk</span></h1>
             <h2>"Empowering Education with Seamless Efficiency"</h2>
             <div class="text-center text-lg-start">
-              <a href="#contact" class="btn-get-started scrollto">Get In Touch</a>
-            </div>
+              
+              <a  <div class = "center">
+                <button id = "show-login">Get a Demo</button>
+
+              </div>
+              <div class = "popup">
+                <div class = "close-btn">&times;</div>
+                <form method ="post" action ="" name = "contactform" id ="contactform">
+                <div class = "form">
+                  
+                  <h3 style="color: black;" >Acadsynk facilitates swift, comprehensive school digitization </h3>
+                  <div class = "form-element">
+                    <label for = "email">Your Name</label>
+                    <input type ="text" class = "form-control" id ="email" name="Name" placeholder = "enter Name">
+                  </div>
+                  <div class="form-element">
+                    <label for="organization-type">Select Organisation Type</label><br>
+                    <input type="radio"  id="organization-type1" name="organization-type" value="type1">
+                    <label for="organization-type1">Independent School</label>
+                
+                    <input type="radio"  id="organization-type2" name="organization-type" value="type2">
+                    <label for="organization-type2">Group of Schools</label>
+                
+                    <!-- Add more radio buttons as needed -->
+                
+                </div>
+                  <div class = "form-element">
+                    <label for = "email">Name of your School</label>
+                    <input type ="text" class = "form-control" id ="email" name = "SchoolName" placeholder = "eg Indian Public School">
+                  </div>
+                  <div class = "form-element">
+                    <label for = "email">Phone Number</label>
+                    <input type ="text" class = "form-control" id ="email" name ="phoneno" placeholder = "eg +91XXXXXXXXXX">
+                  </div>
+
+
+
+                </form>
+                  
+                 
+                  <div class = "form-element">
+                    <button>Submit</button>
+                  
+                </div>
+                
+              </div></a>
+               </div>
+              
           </div>
+          
         </div>
+
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbznIX_S9x2V67R2UtddkZwi03YVuix_Ys8A--pasZrTpGGT7ykdAIKFLhG6WG93YnzBhw/exec';
+          const form = document.forms['contactform'];
+      
+          form.addEventListener('submit', e => {
+              e.preventDefault();
+              fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                  .then(response => response.json())
+                  .then(data => {
+                      alert("Thank you! Your form is submitted successfully.");
+                      form.reset(); // Reset the form with empty fields
+                  })
+                  .catch(error => console.error('Error!', error.message));
+          });
+          function showSuccessMessage() {
+            // Create and show a pop-up alert
+            alert("Thank you! Your form is submitted successfully.");
+          }
+      </script>
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
           <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
         </div>
@@ -323,10 +390,10 @@
 
         <div class="row content">
           <div class="col-md-4" data-aos="fade-right">
-            <img src="assets/img/details-5.png" class="img-fluid" alt="">
+            <img src ="favicon_io/people-using-aumented-reality-smartphones_23-2148789355.jpg" class="img-fluid" style="width:60%;" style = "height:60%;" alt="">
           </div>
           <div class="col-md-8 pt-5" data-aos="fade-up">
-            <h3>EXAM PERFORMANCE</h3>
+            <h3>AUGMENTED REALITY</h3>
             <h4>Teacher can upload the score in the app and parents can track their child’s performance.</h4>
             
           </div>
@@ -344,6 +411,19 @@
             
           </div>
         </div>
+
+
+        <div class="row content">
+          <div class="col-md-4" data-aos="fade-right">
+            <img src="assets/img/details-5.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-5" data-aos="fade-up">
+            <h3>EXAM PERFORMANCE</h3>
+            <h4>Teacher can upload the score in the app and parents can track their child’s performance.</h4>
+            
+          </div>
+        </div>
+
 
       </div>
     </section><!-- End Details Section -->
@@ -389,7 +469,7 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>business@acadsynk.com</p>
+                <p>info@acadsynk.com</p>
               </div>
 
               <div class="phone">
@@ -446,7 +526,7 @@
                 31/A S.K Lane<br>
                 V.V Puram, Bangalore 560004, INDIA<br><br>
                 <strong>Phone:</strong> +91 7014122349<br>
-                <strong>Email:</strong> business@acadsynk.com<br>
+                <strong>Email:</strong> info@acadsynk.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
